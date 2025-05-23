@@ -152,8 +152,6 @@ a.main-button-slider {
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
-  white-space: nowrap; /* Tambahkan ini */
-  display: inline-block;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -665,13 +663,10 @@ welcome
 }
 
 .welcome-area .header-text .left-text {
-  flex: 1;
-  min-width: 300px; /* Berikan lebar minimum untuk mencegah penyusutan berlebihan */
-  padding: 20px;
   position: relative;
   align-self: center;
-  margin-top: 10%; /* Kurangi dari 35% */
-  transform: none; /* Hapus transform */
+  margin-top: 35%;
+  transform: perspective(1px) translateY(-30%) !important;
 }
 
 .welcome-area .header-text h1 {
@@ -710,9 +705,8 @@ welcome
     margin-top: 50%;
   }
   .welcome-area .header-text {
-    width: 90%; /* Pastikan lebar cukup */
-        margin-left: auto;
-        margin-right: auto;
+    width: 50%;
+    margin-left: 5%;
   }
 }
 
@@ -721,8 +715,8 @@ welcome
     height: auto;
   }
   .welcome-area .header-text {       
-    width: 100%;
-    padding-top: 500px;
+    width: 92%;
+    padding-top: 793px;
   }
   .welcome-area .header-text .left-text {
     margin-top: 5%;
